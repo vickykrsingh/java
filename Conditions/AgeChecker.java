@@ -15,5 +15,6 @@ public class AgeChecker {
         }else{
             System.out.println("Adult");
         }
+        sc.close();
     }
 }

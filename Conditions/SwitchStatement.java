@@ -32,5 +32,6 @@ public class SwitchStatement {
             default:
                 System.out.println("Enter valid number");
         }
+        sc.close();
     }
 }
