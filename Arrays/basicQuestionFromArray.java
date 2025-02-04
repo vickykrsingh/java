@@ -1,7 +1,4 @@
 package Arrays;
-
-import java.lang.reflect.Array;
-
 public class basicQuestionFromArray {
     static class CountOccourence{
         int countOcc(int[] arr,int x){
