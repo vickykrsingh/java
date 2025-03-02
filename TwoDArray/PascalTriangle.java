@@ -10,7 +10,7 @@ public class PascalTriangle {
         }
 
     }
-    public static int[][] main(String[] args) {
+    public static int[][] pascalTriangle() {
         int row = 5;
         int[][] arr = new int[5][];
         for(int i = 0;i<row;i++){
@@ -21,5 +21,9 @@ public class PascalTriangle {
             }
         }
         return arr;
+    }
+    public static void main(String[] args) {
+        int arr[][] = pascalTriangle();
+        print2DArray(arr);
     }
 }
