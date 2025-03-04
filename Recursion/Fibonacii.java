@@ -1,29 +1,15 @@
 package Recursion;
 
 public class Fibonacii {
-    static int sum = 1;
-    static int prev = 0;
-    static int next = 1;
-    public static void printFiboSeries(int n){
+    public static void printFiboSeries(int n,int prev,int next){
         if(n<=1){
-            System.out.print(0+"+");
             return;
         }
-        printFiboSeries(n-1);
-        System.out.print(next);
-        if (n==15) {
-            System.out.print("");
-        }else{
-            System.out.print("+");
-        }
-        int temp = prev;
-        prev = next;
-        next = temp+next;
-        sum = prev+next;
+        System.out.print(next+" ");
+        printFiboSeries(n-1, next, prev+next);
     }
     public static void main(String[] args) {
-        printFiboSeries(15);
-        System.out.print("="+sum);
+        printFiboSeries(15,0,1);
         System.out.println();
     }
 }
